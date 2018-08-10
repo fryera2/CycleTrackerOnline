@@ -41,7 +41,7 @@ namespace CycleTrackerOnline.BusinessObjects
         {
             get
             {
-                return (RideCount > 0) ? Rides.Sum(r => r.AverageSpeed) / RideCount : 0;
+                return (RideCount > 0) ? Decimal.Round (Convert.ToDecimal (Rides.Sum(r => r.AverageSpeed) / RideCount), 2) : 0;
             }
         }
 
