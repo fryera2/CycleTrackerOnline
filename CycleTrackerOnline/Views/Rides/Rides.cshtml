@@ -1,0 +1,42 @@
+﻿@using CycleTrackerOnline.BusinessObjects;
+@model RideDetails
+
+@{
+    ViewData["Title"] = "YearRides";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Cycle Tracker</title>
+</head>
+<body>
+    <h1>@Model.ToString()</h1>
+    <div>
+        <table border="">
+            <tr>
+                <td><b>Ride Date</b></td>
+                <td><b>Distance in Miles</b></td>
+                <td><b>Time in Hours</b></td>
+                <td><b>Average Speed</b></td>
+                <td><b>Ascent</b></td>
+                <td><b>Calories</b></td>
+            </tr>
+            @foreach (SingleRide rides in Model.Rides)
+            {
+                <tr>
+                    <td>@rides.RideDate</td>
+                    <td>@rides.DistanceInMiles</td>
+                    <td>@rides.TimeInHours</td>
+                    <td>@rides.AverageSpeed</td>
+                    <td>@rides.Ascent</td>
+                    <td>@rides.Calories</td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div>
+        <h4>Total number of rides: @Model.Rides.Count()</h4>
+    </div>
+</body>
+</html>
+
