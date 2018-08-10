@@ -1,0 +1,11 @@
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\bin\Debug\netcoreapp2.0\CycleTrackerOnline.deps.json
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\bin\Debug\netcoreapp2.0\CycleTrackerOnline.runtimeconfig.json
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\bin\Debug\netcoreapp2.0\CycleTrackerOnline.runtimeconfig.dev.json
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\bin\Debug\netcoreapp2.0\CycleTrackerOnline.dll
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\bin\Debug\netcoreapp2.0\CycleTrackerOnline.pdb
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\obj\Debug\netcoreapp2.0\CycleTrackerOnline.csprojAssemblyReference.cache
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\obj\Debug\netcoreapp2.0\CycleTrackerOnline.csproj.CoreCompileInputs.cache
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\obj\Debug\netcoreapp2.0\CycleTrackerOnline.AssemblyInfoInputs.cache
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\obj\Debug\netcoreapp2.0\CycleTrackerOnline.AssemblyInfo.cs
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\obj\Debug\netcoreapp2.0\CycleTrackerOnline.dll
+C:\Users\Andrew\Source\Repos\CycleTrackerOnline\CycleTrackerOnline\obj\Debug\netcoreapp2.0\CycleTrackerOnline.pdb
