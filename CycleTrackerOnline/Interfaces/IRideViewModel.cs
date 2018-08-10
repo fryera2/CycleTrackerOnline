@@ -10,5 +10,6 @@ namespace CycleTrackerOnline
     {
         RideDetails GetRidesForYear(int year);
         RideDetails GetRidesForMonth(int month, int year);
+        List<RideMatrixItem> GetRideMatrix();
     }
 }

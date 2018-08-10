@@ -19,7 +19,8 @@ namespace CycleTrackerOnline.Controllers
 
         public IActionResult Index()
         {
-            return View(_viewModel);
+            List<RideMatrixItem> rideMatrix = _viewModel.GetRideMatrix();
+            return View(rideMatrix);
         }
 
         public IActionResult YearRides(int year)

@@ -1,7 +1,27 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-}
+﻿@namespace CycleTrackerOnline.BusinessObjects
+@model List<RideMatrixItem>
 
-<h2>Index</h2>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table border="1">
+        @foreach (RideMatrixItem item in Model)
+        {
+            <tr>
+                <td><a asp-controller="rides" asp-action="yearRides" asp-route-year="@item.Year">@item.Year</a></td>
+                @foreach (KeyValuePair<int, string> month in item.Months)
+                {
+                    <td><a asp-controller="rides" 
+                           asp-action="monthRides"
+                           asp-route-month="@month.Key"
+                           asp-route-year="@item.Year">@month.Value</a>
+                    </td>
+                }
+            </tr>
 
+        }
+    </table>
+</body>
+</html>

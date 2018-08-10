@@ -7,7 +7,7 @@ namespace CycleTrackerOnline.BusinessObjects
 {
     public class SingleRide
     {
-        public DateTime? RideDate { get; set; }
+        public string RideDate { get; set; }
         public decimal? DistanceInMiles { get; set; }
         public decimal? TimeInHours { get; set; }
         public decimal? AverageSpeed { get; set; }

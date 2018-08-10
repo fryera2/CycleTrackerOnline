@@ -13,6 +13,46 @@ namespace CycleTrackerOnline.BusinessObjects
         private bool _hasMonthAndYear { get; set; }
         public IEnumerable<SingleRide> Rides { get; set; }
 
+        public int RideCount
+        {
+            get
+            {
+                return Rides.Count();
+            }
+        }
+
+        public decimal? RideTotalDistance
+        {
+            get
+            {
+                return Rides.Sum(r => r.DistanceInMiles);
+            }
+        }
+
+        public decimal? RideTotalTime
+        {
+            get
+            {
+                return Rides.Sum(r => r.TimeInHours);
+            }
+        }
+
+        public decimal? RideTotalAverageSpeed
+        {
+            get
+            {
+                return (RideCount > 0) ? Rides.Sum(r => r.AverageSpeed) / RideCount : 0;
+            }
+        }
+
+        public decimal? RideTotalAscent
+        {
+            get
+            {
+                return Rides.Sum(r => r.Ascent);
+            }
+        }
+
         public RideDetails (int rideMonth, int rideYear)
         {
             _rideYear = rideYear;

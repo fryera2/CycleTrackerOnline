@@ -24,7 +24,7 @@ namespace CycleTrackerOnline.ViewModels
                                                   r.RideDate.Value.Year == year
                                             select new SingleRide
                                             {
-                                                RideDate = r.RideDate,
+                                                RideDate = r.RideDate.Value.ToShortDateString(),
                                                 DistanceInMiles = r.DistanceInMiles,
                                                 TimeInHours = r.TimeInHours,
                                                 AverageSpeed = r.AverageSpeed,
@@ -44,7 +44,7 @@ namespace CycleTrackerOnline.ViewModels
                                             where r.RideDate.Value.Year == year
                                             select new SingleRide
                                             {
-                                                RideDate = r.RideDate,
+                                                RideDate = r.RideDate.Value.ToShortDateString(),
                                                 DistanceInMiles = r.DistanceInMiles,
                                                 TimeInHours = r.TimeInHours,
                                                 AverageSpeed = r.AverageSpeed,
@@ -56,6 +56,17 @@ namespace CycleTrackerOnline.ViewModels
             return details; ;
         }
 
+        public List<RideMatrixItem> GetRideMatrix()
+        {
+            List<int> years = _context.RideYears.Select (y => y.YearId).ToList();
+            List<RideMatrixItem> rideMatrix = new List<RideMatrixItem>();
 
+            foreach (int year in years)
+            {
+                rideMatrix.Add(new RideMatrixItem(year));
+            }
+
+            return rideMatrix;
+        }
     }
 }
