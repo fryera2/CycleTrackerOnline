@@ -10,6 +10,11 @@ namespace CycleTrackerOnline.Models
         public virtual DbSet<Rides> Rides { get; set; }
         public virtual DbSet<RideYears> RideYears { get; set; }
 
+        public CycleDbContext(DbContextOptions<CycleDbContext> options) : base (options)
+        {
+
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
